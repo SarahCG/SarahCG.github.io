@@ -1,0 +1,57 @@
+header {background-color:#170917; 
+	display:block; 
+	height:6em;
+	width:100%; }
+
+body{ background-color:#d0d0db; 
+      font-family: 'Open Sans', sans-serif;}
+
+footer {
+	  background-color: #170917;
+  display: inline-block;
+  height: 3em;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 40%;
+  width: 100%;
+}
+
+  	#Photo {
+  	height: 9em;
+  	width: 7em;
+  	position: absolute;
+  	margin-top: 3em;
+  	background-color:#948e99 ; 
+  		}
+
+ .Navigation {  
+ 	display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 4.5em;}
+
+  #Greeting {  
+  position: static;
+  margin-left: 50%;
+  margin-top: 15%;
+  font-size: 20px;}
+
+  #BlogLinks {  
+  	display: block;
+  text-align: center;
+  list-style-type: none;
+  list-style-image: none;
+
+
+}
+
+ul {list-style-type: none;
+}
+
+#Bloglinks a:link a:hover {color:#170917;}
+
+  a:link{color:#d0d0db;}
+  a:hover{color:#948e99;}
+  a:visited {color:#948e99}
+
+
