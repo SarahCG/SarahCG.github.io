@@ -24,6 +24,13 @@ footer {
   	background-color:#948e99 ; 
   		}
 
+      #Photo img {
+        max-width:100%;
+        max-height:100%;
+        ;
+
+      }
+
  .Navigation {  
  	display: inline-block;
   position: relative;
