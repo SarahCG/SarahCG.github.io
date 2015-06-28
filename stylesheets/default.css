@@ -1,24 +1,37 @@
+html {
+  height: 100%;}
+
 header {background-color:#170917; 
 	display:block; 
 	height:6em;
-	width:100%; }
+	width:100%; 
+   margin-bottom: 3em;
+   padding-left: 0;
+  padding-right: 0px;}
 
 body{ background-color:#d0d0db; 
-      font-family: 'Open Sans', sans-serif;}
+      font-family: 'Open Sans', sans-serif;
+     margin: 0;
+  height: 100%;
+position: inherit;
+  display:block;}
 
 footer {
 	  background-color: #170917;
   display: inline-block;
   height: 3em;
-  position: relative;
+  position: fixed;
+  bottom:0;
   margin-bottom: 0;
-  margin-top: 40%;
+  
   width: 100%;
 }
-
+div#Photo {
+  padding: 2em;
+}
   	#Photo {
-  	height: 9em;
-  	width: 7em;
+  	 height: 144px;
+  width: 144px;
   	position: absolute;
   	margin-top: 3em;
   	background-color:#948e99 ; 
