@@ -69,7 +69,7 @@ div#Photo {
 ul {list-style-type: none;
 }
 
-#BlogLinks a:link {color:#170917;}
+#BlogLinks a {color:#170917;}
 
   a:link{color:#d0d0db;}
   a:hover{color:#948e99;}
