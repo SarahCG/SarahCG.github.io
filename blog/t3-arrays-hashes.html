@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<title>SarahCG Index Page</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css"> 
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+    <header>
+    	<div class="Navigation">
+        <a href ="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="projects.html">My Projects</a>
+            <a href="blog-index.html">My Blog</a>
+            <a href="contact.html">Contact Me</a>>
+    	
+    </div>
+    	 </header>
+    <main>
+  <h1>Arrays and Hashes</h1>
+  <h2><!-- insert subtitle here --></h2>
+  <h4>6/30/15</h4>
+
+  <section>  
+    <p>
+      In this post I would like to cover Arrays and Hashes in Ruby. 
+    </p>
+    <p>
+        <h3>Arrays</h3>
+        <br>
+        An array a list of objects in ruby. An array can hold numbers, words, and even other arrays. <br>
+        You can find objects in arrays using their index, the index is the place in the array where a particular item is. <br>
+        The tricky thing about Arrays is that their index starts at 0, not 1. <br>
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #003366; font-weight: bold">Drinks</span> <span style="color: #333333">=</span> <span style="color: #333333">[</span><span style="background-color: #fff0f0">&#39;Hawaiian Punch&#39;</span>, <span style="background-color: #fff0f0">&#39;Hi-C Ecto Cooler&#39;</span>, <span style="background-color: #fff0f0">&#39;Tang&#39;</span>, <span style="background-color: #fff0f0">&#39;Kool-Aid&#39;</span><span style="color: #333333">]</span>
+</pre></div>
+
+<br>
+        Even though Hawaiian Punch is the first item in the Array, it's index is 0.  Ecto Cooler's index is 1, Tang's index is 2 and Kool-Aid is 3. <br>
+        The great thing about using arrays in Ruby is that it remembers the index and the object so if you are looking for something specific this Arrays are the best way to go.  <br>
+
+
+
+
+
+    </p>
+    <p>
+      <h3>Hashes</h3> 
+      <br>
+      A Hash is similar to an Array, it is less of an ordered list, and more of a heap. Hashes are a collection of key and value pairs. You can index the values in a hash by assigning them a key. Key and values can be anything you want.<br>
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #003366; font-weight: bold">Drinks</span> <span style="color: #333333">=</span>{
+<span style="background-color: #fff0f0">&#39;Hawaiian Punch&#39;</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&#39;The red drink&#39;</span>
+<span style="background-color: #fff0f0">&#39;Hi-C Ecto Cooler&#39;</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&#39;The green drink&#39;</span>
+<span style="background-color: #fff0f0">&#39;Tang&#39;</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&#39;The orange drink&#39;</span>
+<span style="background-color: #fff0f0">&#39;Kool-Aid&#39;</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&#39;The drink that destroys walls&#39;</span>}
+</pre></div>
+    <br> 
+    In this example, the key is the brand (Hawaiian Punch, Hi-C Ecto Cooler, Tang and Kool-Aid) and the value is their description (The red drink, The green drink, The orange drink, and The drink that destroys walls)
+    <br> 
+    If I wanted to find a description of Kool-Aid I could access the key Kool-Aid and get the value The drink that destroys walls. 
+
+    </p>
+    <p>
+      <h3>Array vs. Hash</h3>
+      <br> 
+      Arrays are useful if you want to store a bunch of items and have them ordered for you. An example of where an array would come in handy is a submission form that has multiple fields. If you want to pass through the fields quickly to get to the email address Arrays can help you do that. 
+      <br>
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">submission_form <span style="color: #333333">=</span> <span style="color: #333333">[</span><span style="background-color: #fff0f0">&#39;first_name&#39;</span>, <span style="background-color: #fff0f0">&#39;last_name&#39;</span>, , <span style="background-color: #fff0f0">&#39;age&#39;</span>, <span style="background-color: #fff0f0">&#39;email_address&#39;</span><span style="color: #333333">]</span>
+</pre></div>
+
+
+
+      <br>
+      Hashes are good if you want to associate one item with something else. An example of when you would use Hash would be if you wanted to map out fruit in your fruit bowl, you could easily find out how many apples, oranges, or grapes you have by assigning them keys and values. 
+      <br>
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #003366; font-weight: bold">Fruit_bowl</span> <span style="color: #333333">=</span> {
+<span style="background-color: #fff0f0">&#39;Apples&#39;</span> <span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span>
+<span style="background-color: #fff0f0">&#39;Oranges&#39;</span> <span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">2</span>
+<span style="background-color: #fff0f0">&#39;Grapes&#39;</span> <span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>
+<span style="background-color: #fff0f0">&#39;Bannanas&#39;</span> <span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span>
+}
+</pre></div>
+
+
+
+    </p>
+
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
+   
+
+    <footer>
+    	<a href="https://twitter.com/SCGlaum">Twitter</a>
+    	<a href="https://www.linkedin.com/pub/sarah-glaum/bb/23a/b0b">Linkdin</a>
+    	<a href="#">Google +</a>
+    	<a href="https://github.com/SarahCG/SarahCG.github.io">GitHub</a>
+
+    </footer>
+
+
+  </body>
+</html>
