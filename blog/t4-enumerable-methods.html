@@ -1,0 +1,79 @@
+<!--Designing for accessibility -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<title>SarahCG Index Page</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css"> 
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+    <header>
+    	<div class="Navigation">
+        <a href ="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="projects.html">My Projects</a>
+            <a href="blog-index.html">My Blog</a>
+            <a href="contact.html">Contact Me</a>
+    	
+    </div>
+    	 </header>
+    <main>
+  <h1>Enumerable Methods</h1>
+  <h2><!-- insert subtitle here --></h2>
+  <h4>7/12/15</h4>
+
+  <section>  
+  	
+    <p>
+      <!-- Explain Map. -->
+      Map is an enumerable method in Ruby. It's pretty cool, and I will explain it to you below. 
+      
+      
+    </p>
+    <p>
+         <!-- What does map do? -->
+      Map allows you to run an operation on each item in a block in Ruby and returns the result. Map can do this without changing the original block, if you run it as a non destructive. 
+      <br>
+      [1, 2, 3,].map {|n| n + n} <br>
+      returns <br>
+      [2, 4, 6]<br>
+      See what happened there? You have a new array where each item added itself to itself. You still have your original array in tact, but now your new array displays the result of what happens when you run the operation<br>
+      If you want to permanently change the items in an array you can use map!<br>
+      That little exclamation point there means, "Hey, beware, I am going to make changes to this thing!" <br>
+      [1, 2, 3,].map! {|n| n + n} <br>
+      returns <br>
+      [2, 4, 6]<br>
+      But now, the array that you are working with is not [1, 2, 3] anymore. 
+      <br>
+     The array keeps the values that you map!ed into it, so until you decide to change it again, your array will be [2, 4, 6].
+   
+     </p>
+     <p>
+      Don't confuse map with each. I did that while coding and it really threw me for a loop (no pun intended.. HA!). It's good to remember that each just returns each item in your block. So
+      [1,2,3].each <br>
+      gives you <br>
+      [1,2,3]
+      <br> 
+      Each doesn't touch anything, it simply tells you what each item is. Map, actually applies an operation to each item and keeps it or not, depending on that destructive !. 
+    </p>
+    
+    
+  </section>
+</main>
+
+   
+
+    <footer>
+    	<a href="https://twitter.com/SCGlaum">Twitter</a>
+    	<a href="https://www.linkedin.com/pub/sarah-glaum/bb/23a/b0b">Linkdin</a>
+    	<a href="#">Google +</a>
+    	<a href="https://github.com/SarahCG/SarahCG.github.io">GitHub</a>
+
+    </footer>
+
+
+  </body>
+</html>
