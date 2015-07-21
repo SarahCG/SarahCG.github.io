@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<title>SarahCG Index Page</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css"> 
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+    <header>
+    	<div class="Navigation">
+        <a href ="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="projects.html">My Projects</a>
+            <a href="blog-index.html">My Blog</a>
+            <a href="contact.html">Contact Me</a>
+    	
+    </div>
+    	 </header>
+    <main>
+  <h1>Class in Ruby</h1>
+  <h2><!-- insert subtitle here --></h2>
+  <h4>7/21/15</h4>
+
+  <section>  
+  	
+    <p>
+     
+     
+ <!--Create an example class and teach others when to use instance variables, instance methods, etc. for that object.
+  Write a blog post about the class you designed. This is part of your portfolio that will help set you apart to employers when you graduate, so have fun and show your enthusiasm!--> 
+  A class in Ruby is  a collection of methods that you would like to apply to new objects. 
+  You can create instance variables within your class that speak across methods and change from object to object.  
+  If you want to see the result of the new object you have created, simply ask Ruby to print your new object and call whichever method you would like to see.
+    </p>
+    <p>
+      In this case, I have created a class named Yarn to hold information about my ever-growing yarn stash. I want to see the color and fiber for each new yarn I have. <br>To do this I set my instance variables as @color and @ fiber. <br >When I add a new yarn, and specify what color and fiber it is, Ruby will be able to return those details for each new yarn added. 
+    </p>
+    <p><!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Yarn</span>  
+  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">initialize</span>(color, fiber)  
+    <span style="color: #888888"># Instance variables  </span>
+    <span style="color: #3333BB">@color</span> <span style="color: #333333">=</span> color  
+    <span style="color: #3333BB">@fiber</span> <span style="color: #333333">=</span> fiber  
+  <span style="color: #008800; font-weight: bold">end</span>  
+  
+  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">lookup</span>  
+    <span style="color: #007020">puts</span> <span style="background-color: #fff0f0">&#39;You have new yarn!&#39;</span>  
+  <span style="color: #008800; font-weight: bold">end</span>  
+  
+  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">display</span>  
+    <span style="color: #007020">puts</span> <span style="background-color: #fff0f0">&quot;Your new yarn is </span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@color</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0"> and made of </span><span style="background-color: #eeeeee">#{</span><span style="color: #3333BB">@fiber</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0">&quot;</span>  
+  <span style="color: #008800; font-weight: bold">end</span>  
+<span style="color: #008800; font-weight: bold">end</span>  
+  
+<span style="color: #888888"># making new objects  </span>
+yarn_1 <span style="color: #333333">=</span> <span style="color: #003366; font-weight: bold">Yarn</span><span style="color: #333333">.</span>new(<span style="background-color: #fff0f0">&#39;green&#39;</span>, <span style="background-color: #fff0f0">&#39;wool&#39;</span>)  
+yarn_2 <span style="color: #333333">=</span> <span style="color: #003366; font-weight: bold">Yarn</span><span style="color: #333333">.</span>new(<span style="background-color: #fff0f0">&#39;blue&#39;</span>, <span style="background-color: #fff0f0">&#39;alpaca&#39;</span>)
+yarn_3 <span style="color: #333333">=</span> <span style="color: #003366; font-weight: bold">Yarn</span><span style="color: #333333">.</span>new(<span style="background-color: #fff0f0">&#39;orange&#39;</span>, <span style="background-color: #fff0f0">&#39;synthetic fiber&#39;</span>)
+
+<span style="color: #888888"># Display info from lookup method</span>
+<span style="color: #007020">puts</span> yarn_1<span style="color: #333333">.</span>lookup
+<span style="color: #888888"># Display info from display method </span>
+<span style="color: #007020">puts</span> yarn_1<span style="color: #333333">.</span>display
+<span style="color: #007020">puts</span> yarn_2<span style="color: #333333">.</span>display
+<span style="color: #007020">puts</span> yarn_3<span style="color: #333333">.</span>display
+</pre></div>
+
+
+
+  </p>
+
+  <p>
+  I have created a new Yarn object outside of the class  
+  yarn_1 = Yarn.new('green', 'wool') <br>
+  yarn_2 = Yarn.new('blue', 'alpaca') <br>
+  yarn_3 = Yarn.new('orange', 'synthetic fiber') <br>
+  Underneath the new objects, I have asked Ruby to show the information for the new yarn and the method that has been applied. <br>
+  Once I run this program it returns
+  </p>
+
+    <p>
+   <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #003366; font-weight: bold">You</span> have <span style="color: #003388; font-weight: bold">new</span> yarn!
+
+<span style="color: #003366; font-weight: bold">Your</span> <span style="color: #003388; font-weight: bold">new</span> yarn is green <span style="color: #000000; font-weight: bold">and</span> made of wool
+
+<span style="color: #003366; font-weight: bold">Your</span> <span style="color: #003388; font-weight: bold">new</span> yarn is blue <span style="color: #000000; font-weight: bold">and</span> made of alpaca
+
+<span style="color: #003366; font-weight: bold">Your</span> <span style="color: #003388; font-weight: bold">new</span> yarn is orange <span style="color: #000000; font-weight: bold">and</span> made of synthetic fiber
+</pre></div>
+
+     </p>
+     <p>
+    I can do this for however many new yarns I would like to create, as long as I have include the color and fiber instance variables it will always give me that information back. 
+    </p>
+    <p>
+     
+       
+    </p>
+    <p>
+   
+   
+     </p>
+     
+    
+    
+  </section>
+</main>
+
+   
+
+    <footer>
+    	<a href="https://twitter.com/SCGlaum">Twitter</a>
+    	<a href="https://www.linkedin.com/pub/sarah-glaum/bb/23a/b0b">Linkdin</a>
+    	<a href="#">Google +</a>
+    	<a href="https://github.com/SarahCG/SarahCG.github.io">GitHub</a>
+
+    </footer>
+
+
+  </body>
+</html>
