@@ -1,15 +1,16 @@
 html {
   height: 100%;}
 
-header {background-color:#170917; 
+header {background-color: black; 
 	display:block; 
-	height:6em;
+	height: 7.5em;
 	width:100%; 
    margin-bottom: 3em;
    padding-left: 0;
   padding-right: 0px;}
 
-body{ background-color:#d0d0db; 
+body{   background-image: url("http://wallpaperpassion.com/upload/25710/black-metal-texture-wallpaper.jpg");
+  background-color:#dedec7; 
       font-family: 'Open Sans', sans-serif;
      margin: 0;
   height: 100%;
@@ -17,45 +18,62 @@ position: inherit;
   display:block;}
 
 footer {
-	  background-color: #170917;
+	  background-color: black;
   display: inline-block;
-  height: 3em;
+  height: 2em;
   position: fixed;
   bottom:0;
   margin-bottom: 0;
   
   width: 100%;
 }
+
+footer a {
+  display:inline-block;
+}
 div#Photo {
   padding: 2em;
 }
-  	#Photo {
+  /*	#Photo {
   	 height: 144px;
   width: 144px;
   	position: absolute;
   	margin-top: 3em;
   	 
-  		}
+  		}*/
 
-      #Photo img {
+  /*    #Photo img {
         max-width:100px;
         max-height:100px;
         ;
 
-      }
+      }*/
 
  .Navigation {  
  	display: inline-block;
   position: relative;
   margin-bottom: 0;
-  margin-top: 4.5em;}
+  margin-top: .25em;
+  padding-left: .25em:;
+}
 
-  #Greeting {  
-  position: static;
-  margin-left: 50%;
-  margin-top: 15%;
-  font-size: 20px;}
+  #Greeting {
+  font-family: 'Montserrat', sans-serif;  
 
+    color:white;
+    font-weight: thick;
+  position: absolute;
+      float: right;
+    margin-left: 25em;
+    margin-top: 10px;
+    /* display: flex; */
+    display: flex;
+  font-size: 30px;
+height: 5em;}
+
+#Greeting p {
+  width:20em;
+}
   #BlogLinks {  
   	display: block;
   text-align: center;
@@ -75,4 +93,6 @@ ul {list-style-type: none;
   a:hover{color:#948e99;}
   a:visited {color:#948e99}
 
-
+ a { text-decoration: none;
+ margin-right: 10em; 
+margin-left: 10em;}
