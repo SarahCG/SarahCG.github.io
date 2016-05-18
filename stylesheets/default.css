@@ -1,78 +1,131 @@
 html {
-  height: 100%;}
+ background-image: url("file:///C:/Users/Sarah%20Glaum/Downloads/black-metal-texture-wallpaper@wallpaperpassion.jpg") no-repeat center center fixed;  
+ height: 100%;
+  background-repeat: no-repeat;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-header {background-color: black; 
-	display:block; 
+header {
+  background-color: black; 
+	position:fixed;
+  display:block; 
 	height: 7.5em;
 	width:100%; 
-   margin-bottom: 3em;
-   padding-left: 0;
-  padding-right: 0px;}
+  margin-bottom: 3em;
+}
 
-body{   background-image: url("http://wallpaperpassion.com/upload/25710/black-metal-texture-wallpaper.jpg");
-  background-color:#dedec7; 
-      font-family: 'Open Sans', sans-serif;
+a { text-decoration: none; 
+margin-left: 10em; 
+margin-bottom: 0em;
+margin-top: 2em;}
+
+body{   
+  background-image: url("file:///C:/Users/Sarah%20Glaum/Downloads/black-metal-texture-wallpaper@wallpaperpassion.jpg");
+  background-color:#dedec7;
+  background-repeat: no-repeat;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  color:white;
      margin: 0;
   height: 100%;
 position: inherit;
   display:block;}
 
+.about-text { 
+    margin-top: 8em; 
+  }
+
+.contact-text {
+  margin-top: 8em;
+}
+
+.project-text {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.project-text a {
+  text-decoration: none; 
+margin-left: 0em; 
+margin-bottom: 0em;
+margin-top: 2em;
+
+}
+.Index-links {
+    font-size: 2em;
+    list-style: none;
+    margin-left: 0em;
+    margin-top:-1em;
+    margin-bottom: 0;
+  }
+
+
+
+
+
 footer {
-	  background-color: black;
-  display: inline-block;
+	 
+  display:absolute; 
   height: 2em;
   position: fixed;
-  bottom:0;
+  bottom:.5em;
   margin-bottom: 0;
-  
-  width: 100%;
+  min-width: 100%;
 }
 
 footer a {
   display:inline-block;
-}
-div#Photo {
-  padding: 2em;
-}
-  /*	#Photo {
-  	 height: 144px;
-  width: 144px;
-  	position: absolute;
-  	margin-top: 3em;
-  	 
-  		}*/
+  text-align: center;
+  margin: auto;
 
-  /*    #Photo img {
-        max-width:100px;
-        max-height:100px;
-        ;
+}
 
-      }*/
+.social-buttons {
+  margin-left: auto;
+  margin-right: auto;
+  height: 33px;
+}
+
+.g-follow {
+  display: inline-block;
+}
 
  .Navigation {  
- 	display: inline-block;
-  position: relative;
+ 	display: inline;
+  position: absolute;
   margin-bottom: 0;
-  margin-top: .25em;
-  padding-left: .25em:;
+  font-size: 1.5em;
+  margin:auto;
+  width:100%;
+  text-align: center;
 }
+
+.Navigation a {
+  font-size: 2.3em;
+  margin-bottom: 0px;
+  margin-right: .75em;
+  margin-left: .75em;
+  display: inline;
+}
+
 
   #Greeting {
   font-family: 'Montserrat', sans-serif;  
-
+  text-align: center;
     color:white;
-    font-weight: thick;
-  position: absolute;
-      float: right;
-    margin-left: 25em;
-    margin-top: 10px;
-    /* display: flex; */
-    display: flex;
-  font-size: 30px;
-height: 5em;}
+  position: relative;
+    font-size: 30px;
+    height: 5em;
+    }
 
 #Greeting p {
-  width:20em;
+  
 }
   #BlogLinks {  
   	display: block;
@@ -93,6 +146,238 @@ ul {list-style-type: none;
   a:hover{color:#948e99;}
   a:visited {color:#948e99}
 
- a { text-decoration: none;
- margin-right: 10em; 
-margin-left: 10em;}
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+html {
+ background-image: url("file:///C:/Users/Sarah%20Glaum/Downloads/black-metal-texture-wallpaper@wallpaperpassion.jpg");  
+ height: 100%;}
+
+ header {background-color: black; 
+  position:fixed;
+  display:block; 
+  height: 10em;
+  width:100%; 
+   margin-bottom: 3em;
+  }
+
+  body {
+    font-size: 10px;
+  }
+  footer {
+   
+  display:absolute; 
+  height: 2em;
+  position: fixed;
+  bottom:0;
+  margin-bottom: 0;
+  min-width: 100%;
+}
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    html {
+ background-image: url("file:///C:/Users/Sarah%20Glaum/Downloads/black-metal-texture-wallpaper@wallpaperpassion.jpg");  
+ height: 100%;}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Galaxy S4 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}

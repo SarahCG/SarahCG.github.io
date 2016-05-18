@@ -1,0 +1,77 @@
+html {
+  height: 100%;}
+
+header {background-color:#170917; 
+	display:block; 
+	height:6em;
+	width:100%; 
+   margin-bottom: 3em;
+   padding-left: 0;
+  padding-right: 0px;}
+
+body{ background-color:#d0d0db; 
+      font-family: 'Open Sans', sans-serif;
+     margin: 0;
+  height: 100%;
+position: inherit;
+  display:block;}
+
+footer {
+	  background-color: #170917;
+  display: inline-block;
+  height: 3em;
+  position: fixed;
+  bottom:0;
+  margin-bottom: 0;
+  
+  width: 100%;
+}
+div#Photo {
+  padding: 2em;
+}
+  	#Photo {
+  	 height: 144px;
+  width: 144px;
+  	position: absolute;
+  	margin-top: 3em;
+  	 
+  		}
+
+      #Photo img {
+        max-width:100px;
+        max-height:100px;
+        ;
+
+      }
+
+ .Navigation {  
+ 	display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 4.5em;}
+
+  #Greeting {  
+  position: static;
+  margin-left: 50%;
+  margin-top: 15%;
+  font-size: 20px;}
+
+  #BlogLinks {  
+  	display: block;
+  text-align: center;
+  list-style-type: none;
+  list-style-image: none;
+
+
+
+}
+
+ul {list-style-type: none;
+}
+
+#BlogLinks a {color:#170917;}
+
+  a:link{color:#d0d0db;}
+  a:hover{color:#948e99;}
+  a:visited {color:#948e99}
+
