@@ -1,5 +1,5 @@
 html {
- background-image: url("file:///C:/Users/Sarah%20Glaum/Downloads/black-metal-texture-wallpaper@wallpaperpassion.jpg") no-repeat center center fixed;  
+ background-image: url("https://github.com/SarahCG/SarahCG.github.io/blob/master/imgs/black-metal-texture-wallpaper@wallpaperpassion.jpg?raw=true") no-repeat center center fixed;  
  height: 100%;
   background-repeat: no-repeat;
    -webkit-background-size: cover;
@@ -23,7 +23,7 @@ margin-bottom: 0em;
 margin-top: 2em;}
 
 body{   
-  background-image: url("file:///C:/Users/Sarah%20Glaum/Downloads/black-metal-texture-wallpaper@wallpaperpassion.jpg");
+  background-image: url("https://github.com/SarahCG/SarahCG.github.io/blob/master/imgs/black-metal-texture-wallpaper@wallpaperpassion.jpg?raw=true");
   background-color:#dedec7;
   background-repeat: no-repeat;
    -webkit-background-size: cover;
